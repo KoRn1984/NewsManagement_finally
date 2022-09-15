@@ -23,7 +23,7 @@ public class NewsDao implements INewsDao {
 	private static final String DATE_PATTERN = "yyyy-MM-dd";
 	private static final String MESSAGE_EXCEPTION = "News not saved!";
 	private final UserDao userDao = new UserDao();
-	
+		
 	private static final String SELECT_NEWS_LATEST_LIST = "SELECT * FROM news WHERE published = ? ORDER BY date DESC LIMIT ?";
 	@Override
 	public List<News> getLatestList(int pageSize) throws NewsDaoException  {

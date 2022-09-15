@@ -16,3 +16,6 @@
 <c:if test="${requestScope.commandsName eq 'editNews'}">
 	<c:import url="/WEB-INF/pages/tiles/editNews.jsp" />
 </c:if>
+<c:if test="${requestScope.commandsName eq 'userAccount'}">
+	<c:import url="/WEB-INF/pages/tiles/userPersonalAccount.jsp" />
+</c:if>

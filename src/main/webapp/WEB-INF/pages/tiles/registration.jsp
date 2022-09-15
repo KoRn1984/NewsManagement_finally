@@ -41,7 +41,7 @@
 					<c:out value="${registration_error}" />
 				</font> 
 			</c:if><br />
-			<button type="submit" class="btn btn-success" value="${register}">${register}</button>		
+			<button type="submit" class="btn btn-success" value="${register}">${register}</button>
 		</form>
 </table>
 </div>

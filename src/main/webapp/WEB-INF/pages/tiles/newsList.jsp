@@ -92,7 +92,7 @@
 	</c:forEach>	
 	<c:if test="${sessionScope.role eq 'admin'}">
 	<c:if test="${not(requestScope.presentation eq null)}">	
-	 <c:if test="${not(sessionScope.news eq 'unpublishNews')}">	 
+	 <c:if test="${not(requestScope.news eq 'unpublishNews')}">
 	  <c:if test="${not(requestScope.news eq null)}"> 
 	  <div class="delete-button-position">	  		
 		   <button type="submit" class="btn btn-primary" value="${unpublish}">${unpublish}</button>

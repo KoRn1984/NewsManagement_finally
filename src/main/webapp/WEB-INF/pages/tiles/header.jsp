@@ -13,6 +13,7 @@
 <fmt:message bundle="${loc}" key="local.loc.name.enterPassword" var="enter_password" />
 <fmt:message bundle="${loc}" key="local.loc.name.registration" var="registration" />
 <fmt:message bundle="${loc}" key="local.loc.name.authenticationError" var="authentication_error" />
+<fmt:message bundle="${loc}" key="local.loc.name.personalAccount" var="personalAccount" />
 
 <div class="wrapper">   
 	<div class="newstitle">${news_management}</div>
@@ -41,12 +42,15 @@
 			</div>
 		</c:if>			
 		<c:if test="${sessionScope.user_status eq 'active'}">
-			<div align="right">
+			<div align="right">			
 			<font color="blue">${user.userName}</font>&nbsp;&nbsp;<font color="blue">${user.userSurname}</font>
-				<form action="controller" method="post">				    
-					<input type="hidden" name="command" value="do_sign_out" />
-					<button type="submit" class="badge text-bg-info" value="${sign_out}">${sign_out}</button>
-				</form>
+			<form action="controller" method="post">
+			<div align="right">			
+				<a href="controller?command=go_to_user_personal_account">${personalAccount}</a>
+			</div>								    
+				<input type="hidden" name="command" value="do_sign_out" />
+				<button type="submit" class="badge text-bg-info" value="${sign_out}">${sign_out}</button>
+			</form>
 			</div>
 		</c:if>		
 	</div>

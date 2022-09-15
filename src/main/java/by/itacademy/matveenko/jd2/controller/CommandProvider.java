@@ -17,6 +17,7 @@ import by.itacademy.matveenko.jd2.controller.impl.GoToEditNewsPage;
 import by.itacademy.matveenko.jd2.controller.impl.GoToNewsList;
 import by.itacademy.matveenko.jd2.controller.impl.GoToViewNews;
 import by.itacademy.matveenko.jd2.controller.impl.GoToRegistrationPageCommand;
+import by.itacademy.matveenko.jd2.controller.impl.GoToUserPersonalAccount;
 
 public class CommandProvider {
 	private Map<CommandName, Command> commands = new HashMap<>();
@@ -27,6 +28,7 @@ public class CommandProvider {
 		commands.put(CommandName.GO_TO_NEWS_LIST, new GoToNewsList());		
 		commands.put(CommandName.GO_TO_REGISTRATION_PAGE, new GoToRegistrationPageCommand());
 		commands.put(CommandName.DO_REGISTRATION, new DoRegistration());
+		commands.put(CommandName.GO_TO_USER_PERSONAL_ACCOUNT, new GoToUserPersonalAccount());		
 		commands.put(CommandName.DO_SIGN_IN, new DoSignIn());
 		commands.put(CommandName.DO_SIGN_OUT, new DoSignOut());		
 		commands.put(CommandName.GO_TO_ADD_NEWS_PAGE, new GoToAddNewsPage());

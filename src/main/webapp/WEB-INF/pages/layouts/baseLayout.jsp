@@ -55,7 +55,12 @@
 				         <c:import url="/WEB-INF/pages/tiles/registration.jsp" />
 				    </c:if>
 				    </c:if>				     
-		      </div>		      
+		      </div>
+		      <div class="userPersonalAccount">		            
+		            <c:if test="${sessionScope.commandsName eq 'userAccount'}">
+				         <c:import url="/WEB-INF/pages/tiles/userPersonalAccount.jsp" />
+				    </c:if>				    	     
+		      </div>				      
 		      <div class="addNews">
 		            <c:if test="${sessionScope.commandsName eq 'addNews'}">
 		                <c:import url="/WEB-INF/pages/tiles/addNews.jsp" />	                 

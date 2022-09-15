@@ -16,6 +16,7 @@ public class AttributsName {
 	public static final String COMMAND_NAME = "command";
 	public static final String COMMAND_EXECUTED = "command_executed";
 	public static final String REGISTER = "register";
+	public static final String USER_ACCOUNT = "userAccount";
 	public static final String ADD_NEWS = "addNews";
 	public static final String EDIT_NEWS = "editNews";
 	public static final String UNPUBLISH_NEWS = "unpublishNews";

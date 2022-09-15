@@ -89,8 +89,8 @@ public class UserDao implements IUserDao {
             throw new DaoException(e);
         }
         return true;
-    }
-    
+    }    
+      
     private static final String SELECT_DATA_FIND_BY_ID = "SELECT users.id AS id, login, password, name, surname, email, roles.role AS role FROM users JOIN roles ON roles.id = users.role WHERE users.id = ?";
     @Override
     public User findById(Integer id) throws SQLException, DaoException {    	

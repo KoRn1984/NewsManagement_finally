@@ -14,6 +14,9 @@
 <fmt:message bundle="${loc}" key="local.loc.name.save" var="save" />
 <fmt:message bundle="${loc}" key="local.loc.name.cancel" var="cancel" />
 <fmt:message bundle="${loc}" key="local.loc.name.addNewsError" var="add_news_error" />
+<fmt:message bundle="${loc}" key="local.loc.name.placeholderTitle" var="placeholderTitle" />
+<fmt:message bundle="${loc}" key="local.loc.name.placeholderBrief" var="placeholderBrief" />
+<fmt:message bundle="${loc}" key="local.loc.name.placeholderContent" var="placeholderContent" />
 
 <!DOCTYPE html>
 <html>
@@ -42,11 +45,11 @@
 <form action="controller" method="post">		
 		<input type="hidden" name="command" value="do_add_news" />		              						
 		<label>${title}:<br />
-		<p><textarea type="text" name="title" placeholder="Enter text of title in the field" value="" style="width: 670px; height: 40px;"></textarea></p></label>        
+		<p><textarea type="text" name="title" placeholder="${placeholderTitle}" value="" style="width: 670px; height: 40px;"></textarea></p></label>        
         <label>${brief}:<br />
-        <p><textarea type="text" name="brief" placeholder="Enter text of brief in the field" value="" style="width: 670px; height: 60px;"></textarea></p></label>					
+        <p><textarea type="text" name="brief" placeholder="${placeholderBrief}" value="" style="width: 670px; height: 60px;"></textarea></p></label>					
 		<label>${content}:<br />
-		<p><textarea type="text" name="content" placeholder="Enter text of content in the field" value="" style="width: 670px; height: 140px;"></textarea></p></label>			
+		<p><textarea type="text" name="content" placeholder="${placeholderContent}" value="" style="width: 670px; height: 140px;"></textarea></p></label>			
 		<br />
 		<c:if test="${not (param.AddNewsError eq null)}">					
 			<font color="red">
